@@ -16,18 +16,16 @@ int main()
 	double err = 0;
 	double err2 = 0;
 	
+	//learning rate
 	double rate = 0.05;
 
 	int c = 1;
-	
-	for (int i = 0; i < 10; i++)
-	{
-	    cout<<y[i] <<endl;
-	}   
 
 	while (true)
 	{
 		err = 0;
+		err2 = 0;
+		
 		for (int i = 0; i < 10; i++)
 		{   
 			err += (m*x[i] + n - y[i]);
